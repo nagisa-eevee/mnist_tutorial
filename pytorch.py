@@ -47,7 +47,7 @@ class SimpleNet(nn.Module):
         x = F.relu(self.fc1(x))
         x = self.dropout1(x)
         x = self.fc2(x)
-        x = F.log_softmax(x, dim=1)
+        # x = F.log_softmax(x, dim=1)
         return x
 
 
